@@ -12,7 +12,14 @@ const About = () => {
 					</div>
 					<div className="col-12 col-lg-6">
 						<div className="about__image-container">
-							<img src={Selfie} alt="Picture of Tasha Rolland Aarons, Frontend Developer" className="about__image" loading="lazy" />
+							<img
+								src={Selfie}
+								alt="Picture of Tasha Rolland Aarons, Frontend Developer"
+								className="about__image"
+								width="1000"
+								height="1000"
+								loading="lazy"
+							/>
 						</div>
 						<div className="btn-container">
 							<a href={TRA_CV} className="btn btn__cv" target="_blank">CV</a>

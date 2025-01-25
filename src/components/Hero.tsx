@@ -14,7 +14,8 @@ const Hero = () => (
                             src={HeroImage}
                             alt="Diamonds, stars, hearts, music notes in pastel, lilac and pink tones"
                             className="hero__image"
-							loading="lazy"
+							width="497"
+							height="428"
                         />
                     </div>
                 </div>
