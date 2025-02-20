@@ -22,7 +22,7 @@ const ProfessionalExperience = () => {
 						className="vertical-timeline-element--work vertical-timeline-element--one"
 						contentStyle={{ background: '#FFD6FF', color: '#4E4A52', fontSize: '12px'}}
 						contentArrowStyle={{ borderRight: '14px solid #FFD6FF' }}
-						date="Sept 2020 - Nov 2024"
+						date="Sept 2020 - Present"
 						iconStyle={{ background: '#FFD6FF', color: '#FFF' }}
 						icon={<img src={BI} alt="Bordeaux Index" loading="lazy" />}
 					>
