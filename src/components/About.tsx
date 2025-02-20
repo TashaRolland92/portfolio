@@ -16,8 +16,8 @@ const About = () => {
 								src={Selfie}
 								alt="Picture of Tasha Rolland Aarons, Frontend Developer"
 								className="about__image"
-								width="1000"
-								height="1000"
+								width="500"
+								height="500"
 								loading="lazy"
 							/>
 						</div>
