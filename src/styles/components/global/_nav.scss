@@ -15,34 +15,34 @@
         height: 3px;
         transition: all .3s ease;
 
-        &:nth-child(1){
+        &.menu-toggle--top{
             background-color: $mimi__pink;
         }
 
-        &:nth-child(2){
+        &.menu-toggle--middle{
             background-color: $mauve;
         }
 
-        &:nth-child(3){
+        &.menu-toggle--bottom{
             background-color: $lilac;
         }
     }
 
     &--active{
 
-        &__bar{
+        .menu-toggle__bar{
 
-            &--top{
+            &.menu-toggle--top{
                 top: 10px;
                 position: relative;
                 transform: rotate(45deg);
             }
 
-            &--middle{
+            &.menu-toggle--middle{
                 opacity: 0;
             }
 
-            &--bottom{
+            &.menu-toggle--bottom{
                 top: -6px;
                 position: relative;
                 background-color: $mauve;
