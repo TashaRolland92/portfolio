@@ -2,6 +2,9 @@
 @use "../../utils/mixins" as *;
 
 .hero{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	@include tablet{
 		height: 100vh;
@@ -60,6 +63,7 @@
 
     &__image{
         width: 100%;
+		height: auto;
         max-width: 500px;
     }
 }
