@@ -1,11 +1,10 @@
-import { useState } from "react";
-import Logo from '../assets/svgs/diamond.svg'; // importing dependancies - useState hook to manage the nav menu toggle state
+import { useState } from "react"; // importing dependancies - useState hook to manage the nav menu toggle state
 
 const NavLinks = [
 	{id: 'section1', name: 'About', href: '#section1' },
 	{id: 'section2', name: 'Technical Skills', href: '#section2' },
 	{id: 'section3', name: 'Professional Experience', href: '#section3' },
-	{id: 'section4', name: 'Contact', href: 'mailto:hi@tasharolland.com' },
+	// {id: 'section4', name: 'Contact', href: 'mailto:hi@tasharolland.com' },
 ];
 
 const Nav = () => {
@@ -34,7 +33,6 @@ const Nav = () => {
 
     return (
         <nav className="nav">
-            <h1 className="default__gradient--text logo"><img src={Logo} alt="Gradient Diamond Icon" className="diamond-icon" /> Tasha</h1>
             {/* conditional class here for active state - animation when isNavOpen is true | toggleNav onClick event which open/closes menu */}
 			<div className={`menu-toggle ${isNavOpen ? 'menu-toggle--active' : ''}`} id="mobileMenu" onClick={toggleNav}>
                 <span className="menu-toggle__bar menu-toggle--top"></span>
