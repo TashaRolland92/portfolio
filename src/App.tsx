@@ -6,8 +6,6 @@ import ProfessionalExperience from './components/ProfessionalExperience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-// Peer Review
-
 const App = () => (
 	<>
 		<Header />
