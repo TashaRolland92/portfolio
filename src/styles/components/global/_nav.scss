@@ -15,34 +15,34 @@
         height: 3px;
         transition: all .3s ease;
 
-        &:nth-child(1){
+        &.menu-toggle--top{
             background-color: $mimi__pink;
         }
 
-        &:nth-child(2){
+        &.menu-toggle--middle{
             background-color: $mauve;
         }
 
-        &:nth-child(3){
+        &.menu-toggle--bottom{
             background-color: $lilac;
         }
     }
 
     &--active{
 
-        &__bar{
+        .menu-toggle__bar{
 
-            &--top{
+            &.menu-toggle--top{
                 top: 10px;
                 position: relative;
                 transform: rotate(45deg);
             }
 
-            &--middle{
+            &.menu-toggle--middle{
                 opacity: 0;
             }
 
-            &--bottom{
+            &.menu-toggle--bottom{
                 top: -6px;
                 position: relative;
                 background-color: $mauve;
@@ -53,25 +53,28 @@
 }
 
 .nav{
-    height: 80px;
-    display: flex;
 	position: relative;
-    align-items: center;
-    justify-content: space-between;
 
     &__list{
         right: 0;
         margin: 0;
         gap: 20px;
-        padding: 0;
-        top: 100%;
-        width: 300px;
+        top: 60px;
+        width: 270px;
         display: none;
         padding: 20px;
         list-style: none;
         position: absolute;
         flex-direction: column;
-        background-color: $secondary__color;
+		border: 1px solid $jordy__blue;
+		border-top: none;
+		border-bottom-left-radius: 4px;
+        background-color: $light__pink;
+		border-bottom-right-radius: 4px;
+
+		@include tablet{
+			width: 300px;
+		}
 
         &--active{
             display: flex;
@@ -80,35 +83,35 @@
 
     &__item{
 
-        &--one a{
-            border: 3px solid $mimi__pink;
+        &--1 a{
+            border-left-color: $mimi__pink;
 
             &:hover{
-                background-color: $mimi__pink;
+                background: linear-gradient(to right, $mimi__pink, $mauve);
             }
         }
 
-        &--two a{
-            border: 3px solid $mauve;
+        &--2 a{
+            border-left-color: $mauve;
 
             &:hover{
-                background-color: $mauve;
+                background: linear-gradient(to right, $mauve, $lilac);
             }
         }
 
-        &--three a{
-            border: 3px solid $lilac;
+        &--3 a{
+            border-left-color: $lilac;
 
             &:hover{
-                background-color: $lilac;
+                background: linear-gradient(to right, $lilac, $periwinkle);
             }
         }
 
-        &--four a{
-            border: 3px solid $periwinkle;
+        &--4 a{
+            border-left-color: $periwinkle;
 
             &:hover{
-                background-color: $periwinkle;
+                background: linear-gradient(to right, $periwinkle, $jordy__blue);
             }
         }
     }
@@ -118,10 +121,10 @@
         display: flex;
         padding: 0 10px;
         font-size: 1.6em;
-		border-radius: 4px;
         align-items: center;
         text-decoration: none;
         color: $primary__color;
-        transition: all .3s ease;
+        transition: all .4s ease;
+		border-left: 4px solid transparent;
     }
 }
