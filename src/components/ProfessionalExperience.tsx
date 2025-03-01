@@ -15,7 +15,7 @@ const experienceData = [
 		techList: [
 			'js',
 			'sass',
-			'node',
+			'react',
 			'php',
 		],
 		icon: BI,
