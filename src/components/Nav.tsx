@@ -4,7 +4,7 @@ const NavLinks = [
 	{id: 'section1', name: 'About', href: '#section1' },
 	{id: 'section2', name: 'Technical Skills', href: '#section2' },
 	{id: 'section3', name: 'Professional Experience', href: '#section3' },
-	// {id: 'section4', name: 'Contact', href: 'mailto:hi@tasharolland.com' },
+	{id: 'section4', name: 'Contact', href: '#section4' },
 ];
 
 const Nav = () => {
