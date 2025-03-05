@@ -48,10 +48,31 @@ $desktopLarge: 1200px;
     -webkit-text-fill-color: transparent;
 }
 
-@mixin gradientBorder($colours...){
-	border-top: 6px solid; /* Define the border width */
-	border-image: linear-gradient(to right, $colours...) 1;
+@mixin gradientBorder($borderWidth, $sides, $colours...){
+
+	@if $sides == all{
+		border: $borderWidth double transparent;
+		border-image: linear-gradient(to right, $colours...) 1;
+	} @else {
+		@each $side in $sides {
+			@if $borderWidth {
+				border-#{$side}: $borderWidth solid;
+			}
+			border-image-source: linear-gradient(to right, $colours...);
+			border-image-slice: 1;
+		}
+	}
 }
+
+@mixin gradientBorderRadius($borderWidth, $borderRadius, $colours...){
+	border: double $borderWidth transparent;
+	border-radius: $borderRadius;
+	background-image: linear-gradient(white, white),
+					linear-gradient(to right, $colours...);
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
+}
+
 
 // Top Title
 @mixin topTitle($colour){
