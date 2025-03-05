@@ -1,0 +1,56 @@
+@use "../../utils/variables" as *;
+@use "../../utils/mixins" as *;
+
+.contact{
+	padding-bottom: 40px;
+
+	form{
+		width: 100%;
+		padding: 20px;
+		margin: 0 auto;
+		max-width: 600px;
+		@include gradientBorderRadius(2px, 6px, $mimi__pink, $mauve, $lilac, $periwinkle, $jordy__blue);
+	}
+
+	&__input{
+		border: 0;
+		width: 100%;
+		font-size: 1em;
+		padding: 4px 6px;
+		border-radius: 4px;
+		color: $primary__color;
+		font-family: "Poppins", serif;
+		border: 1px solid $periwinkle;
+		transition: box-shadow ease .3s;
+
+		&:focus{
+			outline: none;
+			box-shadow: 0 0 6px 1px rgba(184,192,255, 0.6);
+		}
+	}
+
+	input{
+		height: 40px;
+	}
+
+	&__top-title{
+		@include topTitle($mimi__pink);
+	}
+
+	&__success-message{
+		padding: 10px;
+		margin: 0 auto;
+		margin-top: 20px;
+		max-width: 600px;
+		border-radius: 4px;
+		background-color: rgb(196, 240, 196);
+
+		p{
+			margin: 0;
+			color: green;
+			transition: all ease .3s;
+		}
+	}
+}
+
+
