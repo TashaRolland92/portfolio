@@ -42,7 +42,7 @@ const Nav = () => {
 						<a
 							href={link.href}
 							className="nav__link"
-							onClick={(e) => link.id !== 'section4' && handleLinkClick(e, link.id)}
+							onClick={(e) => handleLinkClick(e, link.id)}
 						>
 							{link.name}
 						</a>
