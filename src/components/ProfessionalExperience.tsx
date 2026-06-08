@@ -5,7 +5,7 @@ import EY from "../assets/professional/ey-logo.png";
 import NL from "../assets/professional/new-look-logo.png";
 import PP from "../assets/professional/pod-point-icon.png";
 import CD from "../assets/professional/copia-logo.png";
-import TRA_CV from "/TRA_CV.pdf";
+import TRA_CV from "/001_CV_TashaRollandAarons.pdf";
 
 const experienceData = [
 	{
@@ -14,9 +14,9 @@ const experienceData = [
 		subtitle: "Bordeaux Index",
 		techList: [
 			'js',
-			'sass',
-			'react',
 			'php',
+			'sass',
+            'figma',
 		],
 		icon: BI,
 		bgColor: '#FFD6FF',

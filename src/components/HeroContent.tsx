@@ -8,10 +8,10 @@ const HeroContent = () => (
                 <ReactTyped
                     strings={[
                         "Frontend Designer",
-                        "Frontend Developer",
+                        "Frontend Engineer",
                         "Tech Enthusiast",
                         "Cocktail Lover",
-                        "Crafting Aficinado.",
+                        "Passionate Crafter.",
                     ]}
                     typeSpeed={60}
                     backSpeed={60}
